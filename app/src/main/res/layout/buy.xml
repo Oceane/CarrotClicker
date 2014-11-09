@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:stretchColumns="1"
+    android:scrollbars="vertical"
+    android:isScrollContainer="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+<ScrollView
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1"
+    android:scrollbars="vertical"
+    android:isScrollContainer="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Choose a power up:"
+        android:id="@+id/textView10"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 carrots"
+            android:paddingTop = "10dp"
+            android:paddingLeft = "10dp"
+            android:paddingRight = "10dp"
+            android:id="@+id/textView3" />
+
+        <Button
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:text="1 carrot per min"
+            android:id="@+id/Choice1"
+            android:layout_gravity="right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4000 carrots"
+            android:paddingLeft = "10dp"
+            android:paddingRight = "10dp"
+            android:id="@+id/textView4" />
+
+        <Button
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:text="5 carrots per min"
+            android:id="@+id/Choice2"
+            android:layout_gravity="right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5000 carrots"
+            android:paddingLeft = "10dp"
+            android:paddingRight = "10dp"
+            android:id="@+id/textView5" />
+
+        <Button
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:text="10 carrots per min"
+            android:id="@+id/Choice3"
+            android:layout_gravity="right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10000 carrots"
+            android:paddingLeft = "10dp"
+            android:paddingRight = "10dp"
+            android:id="@+id/textView6" />
+
+        <Button
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:text="20 carrots per min"
+            android:id="@+id/Choice4"
+            android:layout_gravity="right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20000 carrots"
+            android:paddingLeft = "10dp"
+            android:paddingRight = "10dp"
+            android:id="@+id/textView7" />
+
+        <Button
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:text="30 carrots per min"
+            android:id="@+id/Choice5"
+            android:layout_gravity="right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30000 carrots"
+            android:paddingLeft = "10dp"
+            android:paddingRight = "10dp"
+            android:id="@+id/textView8" />
+
+        <Button
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:text="40 carrots per min"
+            android:id="@+id/Choice6"
+            android:layout_gravity="right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40000 carrots"
+            android:paddingLeft = "10dp"
+            android:paddingRight = "10dp"
+            android:id="@+id/textView9" />
+
+        <Button
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:text="50 carrots per min"
+            android:id="@+id/Choice7"
+            android:layout_gravity="right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50000 carrots"
+            android:paddingLeft = "10dp"
+            android:paddingRight = "10dp"
+            android:id="@+id/textView11" />
+
+        <Button
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:text="100 carrots per min"
+            android:id="@+id/Choice8"
+            android:layout_gravity="right" />
+</TableLayout>
+</ScrollView>
+</LinearLayout>
