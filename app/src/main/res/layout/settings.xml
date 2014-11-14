@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/pastel_green"
+    android:stretchColumns="1"
+    android:scrollbars="vertical"
+    android:isScrollContainer="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1"
+        android:scrollbars="vertical"
+        android:isScrollContainer="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="INSTRUCTIONS:"
+                android:textStyle="bold"
+                android:id="@+id/textView10"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Back"
+                android:textStyle="bold"
+                android:background="@drawable/button_pressed"
+                android:id="@+id/BackButton"
+                android:layout_column="18" />
+        </TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="How to play:\n\n1) Press the carrot button at the top of the main page until you reach 30 carrots. At that point you will be able to afford your first carrot upgrade.\n\n2) When you will be able to afford your first upgrade, press on the 'buy' button. It will bring you to the section in which you will be able to get you upgrades. (But beware!! do not go there without the proper amount of carrots or else you will be brought back to the main page and receive the message of shame!!!). \n\n 3) Once you got your upgrades you can let your phone do the rest and rest assure you phone and your watch will remind you when you can get more upgrades. \n \n4) When entering your info in your profile page please make sure to always fill in your birthday or else you will be forgotten... "
+            android:id="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

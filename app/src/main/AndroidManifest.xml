@@ -25,7 +25,23 @@
             android:parentActivityName="com.example.enkaichen.carrotclicker.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.wmuapp.MainScreen" />
+                android:value="com.example.enkaichen.carrotclicker.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.enkaichen.carrotclicker.settings"
+            android:label="settings"
+            android:parentActivityName="com.example.enkaichen.carrotclicker.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.enkaichen.carrotclicker.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.enkaichen.carrotclicker.PersonalizePage"
+            android:label="PersonalizePage"
+            android:parentActivityName="com.example.enkaichen.carrotclicker.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.enkaichen.carrotclicker.MainActivity" />
         </activity>
 
     </application>

@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 /**
  * Created by Enkaichen on 11/8/14.
@@ -19,12 +20,18 @@ public class Buy extends Activity {
     Button Choice6;
     Button Choice7;
     Button Choice8;
+    Button Back;
+    TextView NumberOfExtraCarrots;
+    int extra = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final Context context = this;
         setContentView(R.layout.buy);
+        NumberOfExtraCarrots = (TextView)this.findViewById(R.id.ExtraTextView);
+        NumberOfExtraCarrots.setText("You are earning " + String.valueOf(extra)+ " extra carrot per min");
+        MainActivity.add = false;
         Choice1 = (Button)this.findViewById(R.id.Choice1);
         Choice1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,11 +43,23 @@ public class Buy extends Activity {
                         startActivity(intent);
                     }
                     else{
-                        MainActivity.success = "congrats of your purchase";
-                        MainActivity.Earnings += 1;
+                        MainActivity.success = "Congrats of your purchase";
+                        MainActivity.Earnings = MainActivity.Earnings + 1;
                         MainActivity.count = MainActivity.count - 30;
-                        Intent intent = new Intent(context, MainActivity.class);
-                        startActivity(intent);
+                        extra += 1;
+                        if(extra == 1) {
+                            NumberOfExtraCarrots.setText("You are earning " + String.valueOf(extra) + " extra carrot per min");
+                        }
+                        else{
+                            NumberOfExtraCarrots.setText("You are earning " + String.valueOf(extra) + " extra carrots per min");
+                        }
+                        if(MainActivity.count < 30){
+                            MainActivity.success = "Congrats of your purchase but you run out on carrots for upgrades";
+                            Intent intent = new Intent(context, MainActivity.class);
+                            startActivity(intent);
+                        }
+                        //Intent intent = new Intent(context, MainActivity.class);
+                        //startActivity(intent);
                     }
                 }
             }
@@ -56,11 +75,18 @@ public class Buy extends Activity {
                         startActivity(intent);
                     }
                     else{
-                        MainActivity.success = "congrats of your purchase";
+                        MainActivity.success = "Congrats of your purchase";
                         MainActivity.Earnings += 5;
                         MainActivity.count = MainActivity.count - 4000;
-                        Intent intent = new Intent(context, MainActivity.class);
-                        startActivity(intent);
+                        extra += 5;
+                        NumberOfExtraCarrots.setText("You are earning " + String.valueOf(extra)+ " extra carrots per min");
+                        if(MainActivity.count < 30){
+                            MainActivity.success = "Congrats of your purchase but you run out on carrots for upgrades";
+                            Intent intent = new Intent(context, MainActivity.class);
+                            startActivity(intent);
+                        }
+                        //Intent intent = new Intent(context, MainActivity.class);
+                        //startActivity(intent);
                     }
                 }
             }
@@ -77,11 +103,18 @@ public class Buy extends Activity {
                         startActivity(intent);
                     }
                     else{
-                        MainActivity.success = "congrats of your purchase";
+                        MainActivity.success = "Congrats of your purchase";
                         MainActivity.Earnings += 10;
                         MainActivity.count = MainActivity.count - 5000;
-                        Intent intent = new Intent(context, MainActivity.class);
-                        startActivity(intent);
+                        extra += 10;
+                        NumberOfExtraCarrots.setText("You are earning " + String.valueOf(extra)+ " extra carrots per min");
+                        if(MainActivity.count < 30){
+                            MainActivity.success = "Congrats of your purchase but you run out on carrots for upgrades";
+                            Intent intent = new Intent(context, MainActivity.class);
+                            startActivity(intent);
+                        }
+                        //Intent intent = new Intent(context, MainActivity.class);
+                        //startActivity(intent);
                     }
                 }
             }
@@ -97,11 +130,18 @@ public class Buy extends Activity {
                         startActivity(intent);
                     }
                     else{
-                        MainActivity.success = "congrats of your purchase";
+                        MainActivity.success = "Congrats of your purchase";
                         MainActivity.Earnings += 20;
                         MainActivity.count = MainActivity.count - 10000;
-                        Intent intent = new Intent(context, MainActivity.class);
-                        startActivity(intent);
+                        extra += 20;
+                        NumberOfExtraCarrots.setText("You are earning " + String.valueOf(extra)+ " extra carrots per min");
+                        if(MainActivity.count < 30){
+                            MainActivity.success = "Congrats of your purchase but you run out on carrots for upgrades";
+                            Intent intent = new Intent(context, MainActivity.class);
+                            startActivity(intent);
+                        }
+                        //Intent intent = new Intent(context, MainActivity.class);
+                        //startActivity(intent);
                     }
                 }
             }
@@ -117,11 +157,18 @@ public class Buy extends Activity {
                         startActivity(intent);
                     }
                     else{
-                        MainActivity.success = "congrats of your purchase";
+                        MainActivity.success = "Congrats of your purchase";
                         MainActivity.Earnings += 30;
                         MainActivity.count = MainActivity.count - 20000;
-                        Intent intent = new Intent(context, MainActivity.class);
-                        startActivity(intent);
+                        extra += 30;
+                        NumberOfExtraCarrots.setText("You are earning " + String.valueOf(extra)+ " extra carrots per min");
+                        if(MainActivity.count < 30){
+                            MainActivity.success = "Congrats of your purchase but you run out on carrots for upgrades";
+                            Intent intent = new Intent(context, MainActivity.class);
+                            startActivity(intent);
+                        }
+                        //Intent intent = new Intent(context, MainActivity.class);
+                        //startActivity(intent);
                     }
                 }
             }
@@ -137,11 +184,18 @@ public class Buy extends Activity {
                         startActivity(intent);
                     }
                     else{
-                        MainActivity.success = "congrats of your purchase";
+                        MainActivity.success = "Congrats of your purchase";
                         MainActivity.Earnings += 40;
                         MainActivity.count = MainActivity.count - 30000;
-                        Intent intent = new Intent(context, MainActivity.class);
-                        startActivity(intent);
+                        extra += 40;
+                        NumberOfExtraCarrots.setText("You are earning " + String.valueOf(extra)+ " extra carrots per min");
+                        if(MainActivity.count < 30){
+                            MainActivity.success = "Congrats of your purchase but you run out on carrots for upgrades";
+                            Intent intent = new Intent(context, MainActivity.class);
+                            startActivity(intent);
+                        }
+                        //Intent intent = new Intent(context, MainActivity.class);
+                        //startActivity(intent);
                     }
                 }
             }
@@ -157,11 +211,18 @@ public class Buy extends Activity {
                         startActivity(intent);
                     }
                     else{
-                        MainActivity.success = "congrats of your purchase";
+                        MainActivity.success = "Congrats of your purchase";
                         MainActivity.Earnings += 50;
                         MainActivity.count = MainActivity.count - 40000;
-                        Intent intent = new Intent(context, MainActivity.class);
-                        startActivity(intent);
+                        extra += 50;
+                        NumberOfExtraCarrots.setText("You are earning " + String.valueOf(extra)+ " extra carrots per min");
+                        if(MainActivity.count < 30){
+                            MainActivity.success = "Congrats of your purchase but you run out on carrots for upgrades";
+                            Intent intent = new Intent(context, MainActivity.class);
+                            startActivity(intent);
+                        }
+                        //Intent intent = new Intent(context, MainActivity.class);
+                        //startActivity(intent);
                     }
                 }
             }
@@ -177,12 +238,29 @@ public class Buy extends Activity {
                         startActivity(intent);
                     }
                     else{
-                        MainActivity.success = "congrats of your purchase";
-                        MainActivity.Earnings += 50;
+                        MainActivity.success = "Congrats of your purchase";
+                        MainActivity.Earnings += 100;
                         MainActivity.count = MainActivity.count - 50000;
-                        Intent intent = new Intent(context, MainActivity.class);
-                        startActivity(intent);
+                        extra += 100;
+                        NumberOfExtraCarrots.setText("You are earning " + String.valueOf(extra)+ " extra carrots per min");
+                        if(MainActivity.count < 30){
+                            MainActivity.success = "Congrats of your purchase but you run out on carrots for upgrades";
+                            Intent intent = new Intent(context, MainActivity.class);
+                            startActivity(intent);
+                        }
+                        //Intent intent = new Intent(context, MainActivity.class);
+                        //startActivity(intent);
                     }
+                }
+            }
+        });
+        Back = (Button) this.findViewById(R.id.BackButton);
+        Back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(Back.getText().equals("Back")){
+                    Intent intent = new Intent(context, MainActivity.class);
+                    startActivity(intent);
                 }
             }
         });
