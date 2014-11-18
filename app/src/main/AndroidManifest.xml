@@ -43,6 +43,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.enkaichen.carrotclicker.MainActivity" />
         </activity>
+        <activity
+            android:name="com.example.enkaichen.carrotclicker.WearIntent"
+            android:label="WearIntent"
+            android:parentActivityName="com.example.enkaichen.carrotclicker.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.enkaichen.carrotclicker.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.enkaichen.carrotclicker.NotifyMe"
+            android:label="NotifyMe"
+            android:parentActivityName="com.example.enkaichen.carrotclicker.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.enkaichen.carrotclicker.MainActivity" />
+        </activity>
 
     </application>
 
